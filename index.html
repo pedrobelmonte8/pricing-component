@@ -3,19 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Pricing component</title>
+    <link rel="stylesheet" href="./assets/style/styles.css">
   </head>
   <body>
     <main>
       <h1>Our Pricing</h1>
-      <span>Annually</span>
+      <!-- Toggle Switch -->
+      <div class="toggle-wrapper">
+        <span class="toggle-label">Annually</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-toggle" checked/>
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Monthly</span>
+      </div>
 
-      <span> Monthly</span>
-
-      Basic &dollar;19.99 &dollar;199.99 500 GB Storage 2 Users Allowed Send up
-      to 3 GB Learn More Professional &dollar;24.99 &dollar;249.99 1 TB Storage
-      5 Users Allowed Send up to 10 GB Learn More Master &dollar;39.99
-      &dollar;399.99 2 TB Storage 10 Users Allowed Send up to 20 GB Learn More
+      <div class="card">
+        <h2>Basic</h2>
+        <p class="only-mensual">&dollar;19.99</p> 
+        <p class="only-annual hidden">&dollar;199.99</p> 
+        500 GB Storage 2 Users Allowed Send up to 3
+        GB Learn More
+      </div>
+      <div class="card">
+        <h2>Professional</h2>
+       <p class="only-mensual">&dollar;24.99</p> 
+       <p class="only-annual hidden">&dollar;249.99</p>
+        1 TB Storage 5 Users Allowed Send up to 10
+        GB Learn More
+      </div>
+      <div class="card">
+        <h2>Master</h2>
+        <p class="only-mensual">&dollar;39.99</p>
+        <p class="only-annual hidden">&dollar;399.99</p>
+        2 TB Storage 10 Users Allowed Send up to 20
+        GB Learn More
+      </div>
     </main>
   </body>
 </html>
+
+<script src="./assets/scripts/script.js"></script>
