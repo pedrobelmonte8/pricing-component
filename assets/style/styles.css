@@ -152,7 +152,7 @@ body main .cards .card button {
   padding: 0.7rem;
   color: #f6f6fe;
   background: linear-gradient(to right, #a2a6f1, #696ddd);
-  border: solid 1px transparent;
+  border: solid 1px #ffffff;
   border-radius: 5px;
   text-transform: uppercase;
 }
