@@ -8,7 +8,7 @@
 
 .toggle-label {
   font-size: 0.9rem;
-    font-weight: 700;
+  font-weight: 700;
   color: #a2a4b1;
 }
 
@@ -71,8 +71,7 @@
 body {
   background-color: #f6f6fe;
   background-image: url("../images/bg-top.svg");
-  background-position:
-    top right;
+  background-position: top right;
   background-repeat: no-repeat, no-repeat;
   font-size: 15px;
   @media (min-width: 1024px) {
@@ -113,9 +112,8 @@ body {
         align-items: center;
         .dollar-symbol {
           font-size: 2rem;
-
         }
-        
+
         font-size: 4rem;
         font-weight: 700;
         color: #494c5f;
@@ -151,31 +149,62 @@ body {
           width: 100%;
           padding: 0.7rem;
           color: #f6f6fe;
-          background:linear-gradient(to right, #a2a6f1, #696ddd);
-          border: none;
+          background: linear-gradient(to right, #a2a6f1, #696ddd);
+          border: solid 1px transparent;
           border-radius: 5px;
           text-transform: uppercase;
+          &:hover {
+            cursor: pointer;
+            background: #ffffff;
+            color: #696ddd;
+            border: solid 1px #696ddd;
+          }
+          &:active {
+            background: #ffffff;
+            color: #696ddd;
+            border: solid 1px #696ddd;
+          }
+          &:focus {
+            background: #ffffff;
+            color: #696ddd;
+            border: solid 1px #696ddd;
+          }
         }
       }
-      .card-intermediate{
+      .card-intermediate {
         background: linear-gradient(to bottom, #a2a6f1, #696ddd);
         color: #f6f6fe;
-        @media(min-width:1024px){
+        @media (min-width: 1024px) {
           max-height: 450px;
           padding: 2rem 1rem;
         }
-        .plan-label{
+        .plan-label {
           color: #f6f6fe;
         }
-        .plan-price{
+        .plan-price {
           color: #f6f6fe;
         }
-        hr{
+        hr {
           border-top: 1px solid #a2a6f1;
         }
-        button{
+        button {
           background: #f6f6fe;
           color: #696ddd;
+          border: solid 1px #f6f6fe;
+          &:hover {
+            cursor: pointer;
+            color: #f6f6fe;
+            background: #696ddd;
+            border: solid 1px #f6f6fe;
+          }
+          &:active {
+            color: #f6f6fe;
+            background: #696ddd;
+          }
+          &:focus {
+            color: #f6f6fe;
+            background: #696ddd;
+          }
         }
       }
     }

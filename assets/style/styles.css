@@ -152,9 +152,25 @@ body main .cards .card button {
   padding: 0.7rem;
   color: #f6f6fe;
   background: linear-gradient(to right, #a2a6f1, #696ddd);
-  border: none;
+  border: solid 1px transparent;
   border-radius: 5px;
   text-transform: uppercase;
+}
+body main .cards .card button:hover {
+  cursor: pointer;
+  background: #ffffff;
+  color: #696ddd;
+  border: solid 1px #696ddd;
+}
+body main .cards .card button:active {
+  background: #ffffff;
+  color: #696ddd;
+  border: solid 1px #696ddd;
+}
+body main .cards .card button:focus {
+  background: #ffffff;
+  color: #696ddd;
+  border: solid 1px #696ddd;
 }
 body main .cards .card-intermediate {
   background: linear-gradient(to bottom, #a2a6f1, #696ddd);
@@ -178,4 +194,19 @@ body main .cards .card-intermediate hr {
 body main .cards .card-intermediate button {
   background: #f6f6fe;
   color: #696ddd;
+  border: solid 1px #f6f6fe;
+}
+body main .cards .card-intermediate button:hover {
+  cursor: pointer;
+  color: #f6f6fe;
+  background: #696ddd;
+  border: solid 1px #f6f6fe;
+}
+body main .cards .card-intermediate button:active {
+  color: #f6f6fe;
+  background: #696ddd;
+}
+body main .cards .card-intermediate button:focus {
+  color: #f6f6fe;
+  background: #696ddd;
 }/*# sourceMappingURL=styles.css.map */
