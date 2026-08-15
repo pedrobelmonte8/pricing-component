@@ -93,12 +93,14 @@ body main .title {
 body main .cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 @media (min-width: 1024px) {
   body main .cards {
     flex-direction: row;
     padding: 2rem;
+    gap: 0;
   }
 }
 body main .cards .plan-label {
@@ -119,6 +121,7 @@ body main .cards .plan-price {
   margin: 1rem;
 }
 body main .cards .card {
+  max-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,6 +159,12 @@ body main .cards .card button {
 body main .cards .card-intermediate {
   background: linear-gradient(to bottom, #a2a6f1, #696ddd);
   color: #f6f6fe;
+}
+@media (min-width: 1024px) {
+  body main .cards .card-intermediate {
+    max-height: 450px;
+    padding: 2rem 1rem;
+  }
 }
 body main .cards .card-intermediate .plan-label {
   color: #f6f6fe;
