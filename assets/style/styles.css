@@ -105,8 +105,12 @@ body main .cards .plan-label {
   color: #6d708d;
   font-size: 1rem;
 }
+body main .cards .plan-price {
+  display: flex;
+  align-items: center;
+}
 body main .cards .plan-price .dollar-symbol {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 body main .cards .plan-price {
   font-size: 4rem;
@@ -148,4 +152,21 @@ body main .cards .card button {
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
+}
+body main .cards .card-intermediate {
+  background: linear-gradient(to bottom, #a2a6f1, #696ddd);
+  color: #f6f6fe;
+}
+body main .cards .card-intermediate .plan-label {
+  color: #f6f6fe;
+}
+body main .cards .card-intermediate .plan-price {
+  color: #f6f6fe;
+}
+body main .cards .card-intermediate hr {
+  border-top: 1px solid #a2a6f1;
+}
+body main .cards .card-intermediate button {
+  background: #f6f6fe;
+  color: #696ddd;
 }/*# sourceMappingURL=styles.css.map */
